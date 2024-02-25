@@ -1,1 +1,14 @@
 Explain the code execution based on the order of the messages logged in src/quiz/promise-2darray.txt.
+The execution order of resolve is as below.
+Sum called ... 
+returning from sum
+Promise { <pending> }
+resolving ...
+The exe order of reject is as below.
+Sum called ... 
+rejecting ... 
+returning from sum
+Error: BAD INPUT: Expected array as input
+
+The operations inside the promise can be divided into two parts: synchronous and asynchronous. The setTimeout part is asynchronous and others are synchronous. Therefore, in the output, log messages not in the asynchronous parts are in the order as their position in code. 
+The components inside the asynchronous parts are executed in order of code.
