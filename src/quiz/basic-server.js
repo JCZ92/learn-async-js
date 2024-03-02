@@ -37,7 +37,6 @@ const server = http.createServer((req, res) => {
     if (pathname.startsWith('/incidents/')) {
         // Extract parameters from the URL
         const [, , road, location, direction, id] = pathname.split('/');
-
         // Check if all parameters are provided
         if (road && location && direction && id) {
             // Send response with the extracted parameters
