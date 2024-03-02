@@ -37,6 +37,7 @@ function sum2DArray(arr, start) {
 // }).catch(error => { 
 //     console.log(error);
 // })
+
 async function sum() {
     try {
         const promise1 = await sum2DArray(array2D, 0);

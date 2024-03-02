@@ -40,6 +40,7 @@ const aliceTumbling = [
   //             .finished;
   //   })
   //   .catch((err) => alert(`Error when promising ... ${err.message}`));
+
 unk = async () => {
     const res = await alice1.animate(aliceTumbling, aliceTiming).finished;
     console.log(res);
@@ -48,6 +49,7 @@ unk = async () => {
     const res3 = await alice3.animate(aliceTumbling, aliceTiming).finished;
     console.log(res3);
 }
+
 try {
   unk();
 } catch (err) {
